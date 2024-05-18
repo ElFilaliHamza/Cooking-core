@@ -73,3 +73,8 @@ pip-log.txt
 coverage.xml
 htmlcov/
 nosetests.xml
+
+
+
+# ignore private keys 
+/private-assets
