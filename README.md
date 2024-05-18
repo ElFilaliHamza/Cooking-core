@@ -1,3 +1,6 @@
+`This project is a part of the tutorial series on the newboston channel on youtube you can find detailed notes on this github repo "https://github.com/ElFilaliHamza/Djangolio" check out the readme.md file for more details`
+
+
 ## Project setup
 
 Project setup instructions here.
@@ -14,3 +17,6 @@ make shell
 from cooking_core.config.models import Config
 Config.objects.create(owner=None, transaction_fee=1)
 ```
+
+
+
