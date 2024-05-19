@@ -39,4 +39,4 @@ jobs:
           
       - name: Run the deploy process
         run: |
-          ssh target "cd Cooking-core/ && docker-compose down && git pull && docker-compose build && docker-compose up -d --force-recreate"
+          ssh target "cd Cooking-core/ && docker-compose down && git pull origin main && docker-compose build && docker-compose up -d --force-recreate"
