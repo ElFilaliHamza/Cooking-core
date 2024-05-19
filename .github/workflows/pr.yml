@@ -21,7 +21,7 @@ jobs:
       - name: Install Poetry
         uses: abatilo/actions-poetry@v2.0.0
         with:
-          poetry-version: 1.4.2
+          poetry-version: 1.8.3
 
       - name: Install Dependencies
         run: make install && make install-pre-commit

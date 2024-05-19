@@ -48,6 +48,10 @@ switch ($task) {
         poetry run pre-commit install
         break
     }
+    "test" {
+        poetry run pytest -v -rs -n auto --show-capture=no
+        break
+    }
     "up-dependencies-only" {
         if (-Not (Test-Path .env)) {
             New-Item -Path .env -ItemType File
