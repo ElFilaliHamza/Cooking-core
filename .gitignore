@@ -77,4 +77,4 @@ nosetests.xml
 
 
 # ignore private keys 
-/private-assets
+private-assets

@@ -12,8 +12,8 @@ jobs:
         image: postgres:14.2-alpine
         env:
           POSTGRES_DB: cooking_core
-          POSTGRES_USER: cooking_core
-          POSTGRES_PASSWORD: cooking_core
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postDB
 
     steps:
       - uses: actions/checkout@v2
@@ -21,7 +21,7 @@ jobs:
       - name: Install Poetry
         uses: abatilo/actions-poetry@v2.0.0
         with:
-          poetry-version: 1.4.2
+          poetry-version: 1.8.3
 
       - name: Install Dependencies
         run: make install && make install-pre-commit
